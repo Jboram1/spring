@@ -40,7 +40,7 @@
 	<body>
 	  <div>
 	   <h1>회원가입</h1>
-	   <form name="m_frm" method="post" action="doMemberInsert">
+	   <form name="m_frm" method="post" action="doMInsert">
 		   <table>
 		     <tr>
 		       <th>아이디</th>

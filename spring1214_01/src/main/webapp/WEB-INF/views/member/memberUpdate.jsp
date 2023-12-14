@@ -8,7 +8,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>회원가입</title>
+		<title>회원정보수정</title>
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<style>
 		   *{margin:0; padding:0;}
@@ -31,7 +31,7 @@
 					 return false;
 				 }
 				  
-				 alert("회원정보를 저장합니다.");  
+				 alert("회원정보를 수정합니다.");  
 				 m_frm.submit();
 			  });
 		   });
@@ -39,8 +39,8 @@
 	</head>
 	<body>
 	  <div>
-	   <h1>회원가입</h1>
-	   <form name="m_frm" method="post" action="doMemberInsert">
+	   <h1>회원정보수정</h1>
+	   <form name="m_frm" method="post" action="doMInsert">
 		   <table>
 		     <tr>
 		       <th>아이디</th>
@@ -100,7 +100,7 @@
 		       </td>
 		     </tr>
 		   </table>
-		   <button type="button" id="fbtn">저장</button>
+		   <button type="button" id="fbtn">회원정보수정</button>
 		   <button type="button" onclick="javascript:location.href='/'">취소</button>
 	   </form>
 	  </div>
