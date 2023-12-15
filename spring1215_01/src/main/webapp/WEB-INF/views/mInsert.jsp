@@ -8,7 +8,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>회원정보수정</title>
+		<title>회원가입</title>
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<style>
 		   *{margin:0; padding:0;}
@@ -24,14 +24,54 @@
 		</style>
 		<script>
 		   $(function(){
-			  $("#fbtn").click(function(){
+			  $("#idCheck").click(function(){
+				 alert("아이디 중복체크를 진행합니다.");
+				 alert($("#id").val());
+				 $.ajax({
+					 url:"idCheck",
+					 type:"post",
+					 data:{"id":$("#id").val()},
+					 dataType:"json",   //ajax에서 받는 파일형태
+					 contentType:"json", //ajax에서 보내는 파일형태 @RequestBody
+					 success:function(data){
+						 //alert("성공");
+						 if(data.result=='fail'){
+							 alert("아이디가 이미 존재합니다. 다른 아이디를 입력하세요.");
+							 $("#id").val("");
+							 $("#id").focus();
+							 $("#chkTxt").text("아이디 불가능");
+							 $("#chkTxt").css({"color":"red","font-weight":"900"});
+							 return false;
+						 }else{
+							 alert("아이디 사용가능");
+							 $("#chkTxt").text("아이디 사용가능");
+							 $("#chkTxt").css({"color":"blue","font-weight":"900"});
+						 }
+						 console.log("data result : "+data.result);
+					 },
+					 error:function(){
+						 alert("실패");
+					 }
+					 
+					 
+					 
+				 });
+				  
+			  });//idch
+			   
+			   
+			   
+			   
+			   
+			   
+			   $("#fbtn").click(function(){
 				 if($("#id").val().length<2){
 					 alert("아이디를 입력하셔야 합니다.");
 					 $("#id").focus();
 					 return false;
 				 }
 				  
-				 alert("회원정보를 수정합니다.");  
+				 alert("회원정보를 저장합니다.");  
 				 m_frm.submit();
 			  });
 		   });
@@ -39,14 +79,16 @@
 	</head>
 	<body>
 	  <div>
-	   <h1>회원정보수정</h1>
-	   <form name="m_frm" method="post" action="mView">
+	   <h1>회원가입</h1>
+	   <form name="m_frm" method="post" action="doMInsert">
 		   <table>
 		     <tr>
 		       <th>아이디</th>
 		       <td>
 				   <input type="text" name="id" id="id" value="${mdto.id}">
 		           <button type="button" id="idCheck">아이디 확인</button>
+		           <br>
+		           <span id="chkTxt"></span>
 		       </td>
 		     </tr>
 		     <tr>
@@ -100,7 +142,7 @@
 		       </td>
 		     </tr>
 		   </table>
-		   <button type="button" id="fbtn">회원정보수정</button>
+		   <button type="button" id="fbtn">저장</button>
 		   <button type="button" onclick="javascript:location.href='/'">취소</button>
 	   </form>
 	  </div>

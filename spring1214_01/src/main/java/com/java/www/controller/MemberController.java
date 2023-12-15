@@ -6,9 +6,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.java.www.dto.BoardDto;
 import com.java.www.dto.MemberDto;
+
+import jakarta.servlet.http.HttpServletRequest;
 
 @Controller
 @RequestMapping("member")
@@ -19,21 +22,27 @@ public class MemberController {
 		return "member/memberInsert";
 	}
 	
-	@RequestMapping("doMInsert")
-	public String doMInsert(MemberDto mdto, Model model) {
-		model.addAttribute("mdto",mdto);
-		
+	@RequestMapping("doMInsert") //@RequestParam String id, HttpServletRequest request, 
+	public String doMInsert (MemberDto mdto, Model model) {
+			//데이터 받는 방법
+			//1. HttpServletRequest, 2. @RequestParam, 3. 변수, 4.객체(MemberDto mdto)
+			model.addAttribute("mdto",mdto);
+			System.out.println("controller hobby: "+mdto.getHobby());
 		return "member/memberView";
 	}
 	
 	
 	
-	@RequestMapping("memberUpdate")
-	public String memberUpdate(MemberDto mdto, Model model) {
-		
+	@RequestMapping("mUpdate")
+	public String mUpdate(MemberDto mdto, Model model) {
 		model.addAttribute("mdto",mdto);
-		
 		return "member/memberUpdate";
+	}
+	
+	@RequestMapping("mView")
+	public String mView(MemberDto mdto, Model model) {
+		model.addAttribute("mdto",mdto);
+		return "member/memberView";
 	}
 
 	
