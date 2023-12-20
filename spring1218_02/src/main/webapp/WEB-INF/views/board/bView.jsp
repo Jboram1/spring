@@ -71,7 +71,7 @@
     	});
     </script>
 
-    <a href=""><div class="list">목록</div></a>
+    <a href="bList"><div class="list">목록</div></a>
     <a href=""><div class="list">삭제</div></a>
     <div class="list" id="bupdateBtn">수정</div>
     <a href=""><div class="list">답변달기</div></a>

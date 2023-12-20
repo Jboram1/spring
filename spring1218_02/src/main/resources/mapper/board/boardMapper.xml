@@ -9,5 +9,9 @@
 	<select id="bList" resultType="com.java.www.dto.BoardDto">
 		select * from board order by bgroup desc, bstep asc
 	</select>
+	<!-- 1개 -->
+	<select id="selectOne" resultType="com.java.www.dto.BoardDto">
+		select * from board where bno=#{bno}
+	</select>
 
 </mapper>

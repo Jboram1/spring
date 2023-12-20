@@ -1,0 +1,40 @@
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- MemberMapper.java 연결 -->
+<mapper namespace="com.java.www.mapper.BoardMapper">
+
+<select id="bListAll" resultType="com.java.www.dto.BoardDto">
+<![CDATA[
+	select * from 
+	(select row_number() over (order by bgroup desc, bstep asc) 
+	rnum, a.* from board a) where rnum>=1 and rnum<=40
+]]>
+</select>
+
+<select id="bListOne" resultType="com.java.www.dto.BoardDto">
+	select * from board where bno=#{bno}
+</select>
+
+<select id="bListOnePre" resultType="com.java.www.dto.BoardDto">
+	select * from (select row_number() over(order by bgroup desc, bstep asc) rnum, a.* from board a)
+	where rnum= (select rnum from (select row_number() over(order by bgroup desc, bstep asc) rnum, a.* from board a) 
+	where bno=#{bno})+1
+</select>
+<select id="bListOneNext" resultType="com.java.www.dto.BoardDto">
+	select * from (select row_number() over(order by bgroup desc, bstep asc) rnum, a.* from board a)
+	where rnum= (select rnum from (select row_number() over(order by bgroup desc, bstep asc) rnum, a.* from board a) 
+	where bno=#{bno})-1
+</select>
+
+<insert id="bInsert">
+	insert into board values (board_seq.nextval,#{btitle},#{bcontent},sysdate,#{id},
+	board_seq.currval,0,0,1,#{bfile})
+</insert>
+
+<delete id="bDelete">
+	delete board where bno=#{bno}
+</delete>
+
+</mapper>
