@@ -18,12 +18,10 @@
 	 </select>
 	 
 	 <insert id="bCommentInsert">
-	 	<selectKey resultType="int" keyProperty="cno" order="BEFORE">
-	 		select ecomment_seq.nextval from dual
+	 	<selectKey resultType="com.java.www.dto.BcommentDto" keyProperty="cno,cdate" order="BEFORE"> <!-- "cno,cdate" 띄어쓰기하면 안 됨!-->
+	 		select ecomment_seq.nextval cno, sysdate cdate from dual
 	 	</selectKey>
-	 	<!-- <selectKey resultType="date" keyProperty="cdate" order="BEFORE">
-	 		select sysdate from dual
-	 	</selectKey> -->
+	 	
 	 	insert into ecomment values (#{cno},#{bno},#{id},#{cpw},#{ccontent},sysdate)
 	 </insert>
 	 

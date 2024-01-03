@@ -51,9 +51,9 @@ public class BServiceImpl implements BService {
 		System.out.println("bCommentInsert cdate : "+cdto.getCdate());
 		
 		//댓글1개 가져오기
-		BcommentDto bCommentDto = boardMapper.bCommentSelectOne(cdto.getCno());
+		//BcommentDto bCommentDto = boardMapper.bCommentSelectOne(cdto.getCno());
 		
-		return bCommentDto;
+		return cdto;
 	}
 
 	@Override //댓글삭제
