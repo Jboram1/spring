@@ -1,0 +1,144 @@
+section {
+	text-align: center;
+	margin: 30px 50px;
+	
+}
+
+.container {
+  margin: 0 auto;
+}
+
+
+#board-search .search-window {
+  padding: 15px 0;
+}
+#board-search .search-window .search-wrap {
+  position: relative;
+/*   padding-right: 124px; */
+  margin: 0 auto;
+  width: 80%;
+  max-width: 564px;
+}
+#board-search .search-window .search-wrap input {
+  height: 40px;
+  width: 100%;
+  font-size: 14px;
+  padding: 7px 14px;
+  border: 1px solid #ccc;
+}
+#board-search .search-window .search-wrap input:focus {
+  border-color: #333;
+  outline: 0;
+  border-width: 1px;
+}
+#board-search .search-window .search-wrap .btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 108px;
+  padding: 0;
+  font-size: 16px;
+}
+
+
+table {
+	width: 96%;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 40px;
+}
+
+.table-notice {
+	background-color: #e56e00;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.table-title {
+	text-align: left;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th {
+  border: 1px solid silver;
+  border-top: 2px solid black;
+}
+
+td {
+  border: 1px solid silver;
+}
+
+th, td {
+	border-left: hidden;
+	border-right: hidden;
+}
+
+.page-num {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.page-num li {
+	width: 36px;
+	height: 35px;
+	padding: 0;
+	list-style: none;
+}
+
+.first {
+	background:
+		url(../img/list/paging_first.png)
+		no-repeat;
+}
+
+.prev {
+	background:
+		url(../img/list/paging_prev.png)
+		no-repeat;
+}
+
+.num {
+	display: flex;
+	position: relative;
+	top: 1px;
+	height: 33px !important;
+	margin-left: 2px;
+	margin-right: 2px;
+	border: 1px #989898 solid;
+	align-items: center;
+	justify-content: center;
+}
+
+.num>div {
+	position: relative;
+	top: 2px;
+}
+
+.next {
+	background:
+		url(../img/list/paging_next.png)
+		no-repeat;
+}
+
+.last {
+	background:
+		url(../img/list/paging_last.png)
+		no-repeat;
+}
+
+.write {
+	float: right;
+	width: 120px;
+	height: 50px;
+	line-height: 50px;
+	margin: 0 30px 50px 0;
+	border: 2px black solid;
+	text-align: center;
+}
