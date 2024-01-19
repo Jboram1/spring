@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>캠핑장 검색</title>
+		<title>회원가입완료</title>
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	    <meta content="" name="description">
 	    <meta content="" name="keywords">
@@ -28,26 +28,28 @@
 	    <!-- Template Main CSS File -->
 	    <link href="assets/css/main2.css" rel="stylesheet">
 	    <link href="assets/css/header.css" rel="stylesheet">
-		<link href="assets/css/rentcart.css" rel="stylesheet">
-		
-		
+		<link href="assets/css/signUp02.css" rel="stylesheet">
+	    
+	   
 	    
 	</head>
 	<body>
 	<!-- ======= Header ======= -->
 	<%@include file="include/header.jsp" %>
 	<!-- End Header -->
-			
-			
-		<div id="s_page">
-			<img src="../assets/img/rent/cpRent_v3.jpg">
-			<img src="../assets/img/rent/cpRent_v0.png">
-			
-		</div>
-		
-		<div id="packV">
-		  <a href="cpRent"><button>뒤로가기</button></a>
-		</div>
+			<section class="signUp_02">
+					<img src="../assets/img/signup_icon.png">
+					<h1><span>회원가입</span> 완료 되었습니다!</h1>
+					
+					<div class="amount3">
+						<p>홍길동님 가입을 축하드립니다!<br>캠브릿지에 가입해주셔서 감사합니다.</p>
+						<p class="signup_detail">저희 캠브릿지에서 행복한 추억 만드시기 바랍니다.</p>
+						
+					</div>
+					
+		 	 <a href="/"><button>Campbridge 바로가기</button></a>
+			</section>
+        
         
 		
 		<!-- ======= Footer ======= -->

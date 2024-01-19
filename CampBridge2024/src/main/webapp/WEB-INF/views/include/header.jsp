@@ -17,7 +17,7 @@
 	        <h1>CampBridge<span>.</span></h1>
 	      </a>
 	      <div class="login d-flex">
-	      <li><a href="/login">로그인</a></li>
+	      <li><a href="myList">로그인</a></li>
 	      <li><a href="#">회원가입</a></li>
 	      <li><a href="nList">공지사항</a></li>
 	      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -45,7 +45,7 @@
 	          <li><a href="tSearch">테마검색</a></li>
 	          <li class="dropdown"><a href="#"><span>커뮤니티</span></a>
 	            <ul>
-	              <li><a href="#">파티원모집</a></li>
+	              <li><a href="fList">파티원모집</a></li>
 		          <li><a href="#">캠핑꿀팁(NowHow)</a></li>
 	              <li><a href="#">중고거래&캠핑장 양도</a></li>
 	              <li><a href="#">자유게시판</a></li>

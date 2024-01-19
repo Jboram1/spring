@@ -39,7 +39,7 @@
 	
 		<section class="cp_Rent">
 			<h1 style="color:red;">※ 안내사항 ※</h1><br>
-			<div><img src="../assets/img/cpRent0.png"></div>
+			<div><img src="../assets/img/rent/cpRent0.png"></div>
 		
 		   
 			<!-- 캠핑용품대여 -->

@@ -1,53 +1,77 @@
+@charset "UTF-8";
+
 section {
 	text-align: center;
-	margin: 30px 50px;
-	
+	margin: 150px 50px;
 }
+
+.notice a{color: black;}
 
 .container {
-  margin: 0 auto;
+	margin: 0 auto;
 }
-
-
-#board-search .search-window {
-  padding: 15px 0;
-}
-#board-search .search-window .search-wrap {
-  position: relative;
-/*   padding-right: 124px; */
-  margin: 0 auto;
-  width: 80%;
-  max-width: 564px;
-}
-#board-search .search-window .search-wrap input {
-  height: 40px;
-  width: 100%;
-  font-size: 14px;
-  padding: 7px 14px;
-  border: 1px solid #ccc;
-}
-#board-search .search-window .search-wrap input:focus {
-  border-color: #333;
-  outline: 0;
-  border-width: 1px;
-}
-#board-search .search-window .search-wrap .btn {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 108px;
-  padding: 0;
-  font-size: 16px;
-}
-
 
 table {
-	width: 96%;
+	width: 75%;
 	margin-top: 100px;
 	margin-left: auto;
 	margin-right: auto;
 	line-height: 40px;
+}
+
+.searchDiv {
+	position: relative;
+	top: 90px;
+	left: 300px;
+	width: 1180px;
+	height: 55px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: felx;
+}
+
+.searchTitle, .searchWord, .searchBtn {
+	height: 50px;
+}
+
+#searchTitle {
+	width: 100px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+	border: 2px solid #009223;
+	border-radius: 10px;
+}
+
+#searchWord {
+	width: 800px;
+	font-size: 18px;
+	font-weight: 700;
+	border: 2px solid #009223;
+	border-radius: 10px;
+}
+
+#searchBtn {
+	width: 90px;
+	font-size: 18px;
+	font-weight: 700;
+	background: #009223;
+	border: 2px solid #009223;
+	color: white;
+	position: relative;
+	bottom: 1px;
+	border-radius: 10px;
+}
+
+#searchBtn:hover {
+	width: 90px;
+	font-size: 18px;
+	font-weight: 700;
+	background: #ffce32;
+	border: 2px solid #ffce32;
+	color: #009223;
+	transition: all 0.4s;
 }
 
 .table-notice {
@@ -61,17 +85,19 @@ table {
 	text-align: left;
 }
 
+
+
 table {
 	border-collapse: collapse;
 }
 
 th {
-  border: 1px solid silver;
-  border-top: 2px solid black;
+	border: 1px solid silver;
+	border-top: 3px solid #009223;
 }
 
 td {
-  border: 1px solid silver;
+	border: 1px solid silver;
 }
 
 th, td {
@@ -79,29 +105,51 @@ th, td {
 	border-right: hidden;
 }
 
+#No {
+	font-weight: 700;
+}
+
 .page-num {
-	margin-top: 50px;
+	margin-top: 30px;
 	display: flex;
 	justify-content: center;
 }
 
 .page-num li {
+	list-style: none;
+	width: 36px;
+	height: 35px;
+	padding: 0;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.num {
 	width: 36px;
 	height: 35px;
 	padding: 0;
 	list-style: none;
+	font-weight: 700;
+}
+
+.num:hover {
+	width: 36px;
+	height: 35px;
+	padding: 0;
+	list-style: none;
+	background: #009223;
+	border: 1px solid #009223;
+	color: #ffce32;
+	transition: all 0.4s;
+	font-weight: 700;
 }
 
 .first {
-	background:
-		url(../img/list/paging_first.png)
-		no-repeat;
+	background: url(../img/list/btn_pre00.png) no-repeat;
 }
 
 .prev {
-	background:
-		url(../img/list/paging_prev.png)
-		no-repeat;
+	background: url(../img/list/btn_pre01.png) no-repeat;
 }
 
 .num {
@@ -109,8 +157,8 @@ th, td {
 	position: relative;
 	top: 1px;
 	height: 33px !important;
-	margin-left: 2px;
-	margin-right: 2px;
+	margin-left: 5px;
+	margin-right: 5px;
 	border: 1px #989898 solid;
 	align-items: center;
 	justify-content: center;
@@ -122,23 +170,46 @@ th, td {
 }
 
 .next {
-	background:
-		url(../img/list/paging_next.png)
-		no-repeat;
+	background: url(../img/list/btn_next01.png) no-repeat;
 }
 
 .last {
-	background:
-		url(../img/list/paging_last.png)
-		no-repeat;
+	background: url(../img/list/btn_next00.png) no-repeat;
 }
 
 .write {
-	float: right;
-	width: 120px;
-	height: 50px;
-	line-height: 50px;
-	margin: 0 30px 50px 0;
-	border: 2px black solid;
+	width: 100px;
+	line-height: 40px;
+	margin: 10px 10px 0px 0px;
+	border: 2px solid #009223;
 	text-align: center;
+	position: relative;
+	right: -570px;
+	background: #009223;
+	color: white;
+	font-weight: 700;
+	font-size: 20px;
+	border-radius: 10px;
 }
+
+.write:hover {
+	width: 100px;
+	line-height: 40px;
+	margin: 10px 10px 0px 0px;
+	border: 2px solid #ffce32;
+	text-align: center;
+	position: relative;
+	right: -570px;
+	background: #ffce32;
+	color: #009223;
+	font-weight: 700;
+	font-size: 20px;
+	border-radius: 10px;
+	transition: all 0.4s;
+}
+
+#btnTable {
+	float: left;
+	border: 1px solid black;
+}
+

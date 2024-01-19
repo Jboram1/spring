@@ -55,5 +55,17 @@ public class FController {
 	}// cp_Cart03()
 	
 	
+	@GetMapping("signUp02")
+	public String signUp02() {
+		return "signUp02";
+	}// signUp02()
+	
+	@GetMapping("myList")
+	public String myList() {
+		return "myList";
+	}// myList()
+
+	
+	
 
 }// FController

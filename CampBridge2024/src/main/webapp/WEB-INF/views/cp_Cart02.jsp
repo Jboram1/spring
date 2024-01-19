@@ -50,10 +50,10 @@
 					<h3 class="dep">주문 제품 확인</h3>
 					<div class="orderDivNm">
 						<table summary="주문 제품 확인 게시판으로 상품명, 가격, 수량, 합계순으로 조회 하실수 있습니다." class="orderTable" border="1" cellspacing="0">
-							<caption>주문 제품 확인</caption>
+							<caption id="cp_cart_list">주문 제품 확인</caption>
 							<colgroup>
-							<col width="5" />
-							<col width="19" />
+							<col width="12" />
+							<col width="12" />
 							<col width="16%" class="tnone" />
 							<col width="14%" />
 							<col width="16%" class="tw28"/>
@@ -65,8 +65,8 @@
 								<th scope="col">합계</th>
 							</thead>
 							<tbody>
-								<tr>
-									<td><p class="img"><img src="../assets/img/cpRent1.png" alt="상품" width="66" height="66" /></p></td>
+								<tr class="cartTable">
+									<td><p class="img"><img src="../assets/img/rent/cpRent1.png" alt="상품" width="66" height="66" /></p></td>
 									<td><ul class="goods">
 											<li>
 												<a href="#">야전침대</a>
@@ -76,8 +76,8 @@
 									<td>1 개</td>
 									<td>8,000 원</td>
 								</tr>
-								<tr>
-									<td><p class="img"><img src="../assets/img/cpRent2.png" alt="상품" width="66" height="66" /></p></td>
+								<tr class="cartTable">
+									<td><p class="img"><img src="../assets/img/rent/cpRent2.png" alt="상품" width="66" height="66" /></p></td>
 									<td><ul class="goods">
 											<li>
 												<a href="#">2인용 패키지</a>
@@ -87,8 +87,8 @@
 									<td>1 개</td>
 									<td>55,000 원</td>
 								</tr>
-								<tr>
-									<td><p class="img"><img src="../assets/img/cpRent3.png" alt="상품" width="66" height="66" /></p></td>
+								<tr class="cartTable">
+									<td><p class="img"><img src="../assets/img/rent/cpRent3.png" alt="상품" width="66" height="66" /></p></td>
 									<td><ul class="goods">
 											<li>
 												<a href="#">택배수령</a>
@@ -165,8 +165,7 @@
 							<label for="">주소</label>
 						</dt>
 						<dd>
-							<input type="text" id="f_postal" name="f_postal" required />
-							<span>-</span>
+							
 							<input type="text" id="l_postal" name="l_postal" required />
 							<input type="button" value="우편번호"/>
 							<input type="text" id="address1" name="address1" required />
@@ -232,8 +231,7 @@
 							<label for="">주소</label>
 						</dt>
 						<dd>
-							<input type="text" id="f_postal" name="f_postal" required />
-							<span>-</span>
+							
 							<input type="text" id="l_postal" name="l_postal" required />
 							<input type="button" value="우편번호"/>
 							<input type="text" id="address1" name="address1" required />
@@ -256,11 +254,12 @@
 							<ul>
 								<li>
 									 <input type="checkbox" id="payment1" name="payment" value="신용카드" onClick="clkOftenAddr(this);"/> 
-									 <label for="payment1">신용카드</label> 
+									 <label for="payment1">현장결제</label> 
 								</li>
 						 		<li> 
 							 		<input type="checkbox" id="payment2" name="payment" value="무통장입금" onClick="clkOftenAddr(this);"/> 
-							 		<label for="payment2">무통장 입금</label> 
+							 		<label for="payment2">무통장 입금<span style="color:red;">　※캠브릿지 농협 123-456-789</span></label>
+							 		
 						 		</li>
 					 		</ul>
 					 	</dd>

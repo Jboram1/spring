@@ -42,10 +42,12 @@
 					
 					<div class="amount3">
 						<p>캠브릿지님 주문이 완료되었습니다.<br>주문 감사합니다.</p><br><br>
-						<img alt="안내사항" src="../assets/img/payment.png">
+						<p style="color:red;">※캠브릿지 농협 123-456-789※</p>
+						<img alt="안내사항" src="../assets/img/rent/payment.png">
 					</div>
 					
 		 	 <a href="/"><button>메인으로</button></a>
+		 	 <a href="#"><button>마이페이지</button></a>
 			</section>
         
         

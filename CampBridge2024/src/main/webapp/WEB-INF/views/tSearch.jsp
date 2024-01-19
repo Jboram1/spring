@@ -28,7 +28,6 @@
 	    <!-- Template Main CSS File -->
 	    <link href="assets/css/main2.css" rel="stylesheet">
 	    <link href="assets/css/header.css" rel="stylesheet">
-		<link href="assets/css/listStyle.css" rel="stylesheet">
 		<link href="assets/css/tsearch.css" rel="stylesheet">
 	    
 	    

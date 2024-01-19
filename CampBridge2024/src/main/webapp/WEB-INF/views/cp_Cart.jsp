@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>대여 목록</title>
+		<title>장바구니</title>
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	    <meta content="" name="description">
 	    <meta content="" name="keywords">
@@ -44,7 +44,7 @@
 					<h3>장바구니에 담긴 상품 <span>장바구니에 담긴 상품은 30일간 보관됩니다.</span></h3>
 					<div class="orderDivNm">
 						<table summary="장바구니에 담긴 상품들을 전체선택, 상품명, 가격/포인트, 수량, 합계, 주문 순으로 조회 및 주문을 하실수 있습니다." class="orderTable" border="1" cellspacing="0">
-							<caption>대여 상품목록</caption>
+							<caption id="cp_cart_list">대여 상품목록</caption>
 							<colgroup>
 							<col width="7%"/>
 							<col width="9%" class="tp" />
@@ -54,7 +54,7 @@
 							<col width="12%" class="tw28"/>
 							<col width="12%" class="tnone" />
 							</colgroup>
-							<thead>
+							<thead class="rent_list">
 								<th scope="col"><input type="checkbox" /></th>
 								<th scope="col" colspan="2" class="tp">상품명</th>
 								<th scope="col" class="tnone">가격</th>
@@ -65,7 +65,7 @@
 							<tbody>
 								<tr>
 									<td><input type="checkbox" /></td>
-									<td><p class="img"><img src="../assets/img/cpRent2.png" alt="상품" width="66" height="66" /></p></td>
+									<td><p class="img"><img src="../assets/img/rent/cpRent2.png" alt="상품" width="66" height="66" /></p></td>
 									<td>
 										<ul class="goods">
 											<li>
@@ -85,7 +85,7 @@
 								</tr>
 								<tr>
 									<td><input type="checkbox" /></td>
-									<td><p class="img"><img src="../assets/img/cpRent1.png" alt="상품" width="66" height="66" /></p></td>
+									<td><p class="img"><img src="../assets/img/rent/cpRent1.png" alt="상품" width="66" height="66" /></p></td>
 									<td>
 										<ul class="goods">
 											<li>
@@ -105,7 +105,7 @@
 								</tr>
 								<tr>
 									<td><input type="checkbox" /></td>
-									<td><p class="img"><img src="../assets/img/cpRent3.png" alt="상품" width="66" height="66" /></p></td>
+									<td><p class="img"><img src="../assets/img/rent/cpRent3.png" alt="상품" width="66" height="66" /></p></td>
 									<td>
 										<ul class="goods">
 											<li>
@@ -177,6 +177,7 @@
 				 
 			
 		  
+		  <a href="/"><button>메인</button></a> 
 		  <a href="cpRent"><button>뒤로가기</button></a> 
 		  <a href="cp_Cart02"><button>선택상품 주문하기</button></a> 
 		  <a href="cp_Cart02"><button>전체상품 주문하기</button></a> 

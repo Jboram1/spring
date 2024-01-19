@@ -40,8 +40,8 @@
 			
 			
 		<div id="s_page">
-			<img src="../assets/img/cpRent_v1.jpg">
-			<img src="../assets/img/cpRent_v0.png">
+			<img src="../assets/img/rent/cpRent_v1.jpg">
+			<img src="../assets/img/rent/cpRent_v0.png">
 			
 		</div>
 		
