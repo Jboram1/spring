@@ -160,18 +160,7 @@
 						</dd>
 					</dl>
 					
-					<dl id="order_address_dl">
-						<dt> 
-							<label for="">주소</label>
-						</dt>
-						<dd>
-							
-							<input type="text" id="l_postal" name="l_postal" required />
-							<input type="button" value="우편번호"/>
-							<input type="text" id="address1" name="address1" required />
-							<input type="text" id="address2" name="address2" required />
-						</dd>
-					</dl>
+					
 				</fieldset>
 			</form>
 			<!-- //주문자 주소 입력 -->

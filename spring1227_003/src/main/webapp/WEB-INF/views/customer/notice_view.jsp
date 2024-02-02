@@ -226,17 +226,17 @@ $(document).ready(function() {
 						<div class="viewHead">
 							<div class="subject">
 								<ul>
-									<li>${map.bdto.btitle}</li>
+									<li>${bdto.btitle}</li>
 								</ul>
 							</div>
 							<div class="day">
-								<p class="txt">작성일<span><fmt:formatDate value="${map.bdto.bdate}" pattern="yyyy.MM.dd"/></span></p>
+								<p class="txt">작성일<span><fmt:formatDate value="${bdto.bdate}" pattern="yyyy.MM.dd"/></span></p>
 							</div>
 						</div>
 
-						<div class="viewContents">${map.bdto.bcontent}<br><br><br>
-						<c:if test="${map.bdto.bfile != null}">
-							<img src="/upload/${map.bdto.bfile}" style="width: 100%;">
+						<div class="viewContents">${bdto.bcontent}<br><br><br>
+						<c:if test="${bdto.bfile != null}">
+							<img src="/upload/${bdto.bfile}" style="width: 100%;">
 						</c:if>
 						</div>
 					</div>

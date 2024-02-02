@@ -41,7 +41,7 @@
 			<!-- 장바구니에 상품이 있을경우 -->
 					<!-- 장바구니 상품 -->
 					<h1>대여품목 리스트</h1>
-					<h3>장바구니에 담긴 상품 <span>장바구니에 담긴 상품은 30일간 보관됩니다.</span></h3>
+					<h3>장바구니에 담긴 상품은 30일간 보관됩니다.</h3>
 					<div class="orderDivNm">
 						<table summary="장바구니에 담긴 상품들을 전체선택, 상품명, 가격/포인트, 수량, 합계, 주문 순으로 조회 및 주문을 하실수 있습니다." class="orderTable" border="1" cellspacing="0">
 							<caption id="cp_cart_list">대여 상품목록</caption>

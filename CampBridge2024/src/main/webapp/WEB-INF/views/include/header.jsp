@@ -42,7 +42,7 @@
 		            <li><a href="#">추천 검색</a></li>
 		        </ul>
 	          </li>
-	          <li><a href="tSearch">테마검색</a></li>
+	          <li><a href="ss/tSearch">테마검색</a></li>
 	          <li class="dropdown"><a href="#"><span>커뮤니티</span></a>
 	            <ul>
 	              <li><a href="fList">파티원모집</a></li>

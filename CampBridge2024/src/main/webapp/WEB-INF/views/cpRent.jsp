@@ -100,7 +100,7 @@
 					</li>
 		 		</ul></dl>
 		 		
-		 		<h3>추가 선택 사항</h3>
+		 		<h3>개별 상품</h3>
 		 		<h2 style="color:red;">※ 수령방법 필수 선택 ※</h2>
 		  		<dl class="pack">
 			 	<dt>침구 선택 </dt>
